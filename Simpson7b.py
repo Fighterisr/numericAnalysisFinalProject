@@ -1,4 +1,5 @@
-import math
+import numpy as np
+from sympy import cos
 
 
 def simpsonrule(func,start,end,intervals):
@@ -16,6 +17,6 @@ def simpsonrule(func,start,end,intervals):
     return result
 
 def f(x):
-    return math.cos(pow(2*math.e,-2*x))/(pow(x,2)+5*x+6)
+    return cos((2*np.e**(-2*x)))/((x**2)+5*x+6)
 
 print("The last answer is:  %.6f"%simpsonrule(f,-0.4, 0.4, 4))
