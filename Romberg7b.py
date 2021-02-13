@@ -1,5 +1,6 @@
-import math
 import numpy as np
+from sympy import sin, cos, pi
+
 
 
 def Trapezoid(func, start, end, intervals):
@@ -31,9 +32,9 @@ def romberg(func, a, b, p):
 
 
 def func(x):
-    return math.cos(pow(2*math.e,-2*x))/(pow(x,2)+5*x+6)
+    return cos((2*np.e**(-2*x)))/((x**2)+5*x+6)
 
 rows = 5
 T = romberg(func, -0.4 , 0.4, rows)
 solution = T[rows-1, rows-1]
-print("The last answer: %.8f"%(solution))
+print("The last answer:%.6f"%(solution))
