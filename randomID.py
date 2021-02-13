@@ -6,7 +6,6 @@ nivID = 207992975
 eliID = 208676742
 ruslanID = 321906497
 
-
 print('Using Omri ID as seed:')
 random.seed(omriID)
 questionNumber = random.randint(1,9)
