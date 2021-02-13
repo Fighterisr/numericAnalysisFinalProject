@@ -31,7 +31,7 @@ def romberg(func, a, b, p):
 
 
 def func(x):
-    return pow(x*2*math.e,pow(-x,2)-5*x-3)*(3*x-5)
+    return ((x**2)*(np.e)**(-x**2+5*x-3))*(3*x-5)
 
 rows = 4
 T = romberg(func, 0.5 , 1, rows)
