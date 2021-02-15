@@ -1,4 +1,3 @@
-import math
 import prettytable as pt
 import sympy as sp
 
