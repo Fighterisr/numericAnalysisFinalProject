@@ -35,6 +35,11 @@ def jacobi(A,x,b):
             break
         iteration += 1
     print(table)
+    table.clear()
+    table.field_names = ['X', 'Y', 'Z']
+    table.add_row(x)
+    print("\nThe solutions are:")
+    print(table)
 
 def gaussSeidel(A,x,b):
     x = x.copy()
@@ -61,6 +66,11 @@ def gaussSeidel(A,x,b):
         if condition < epsilon:
             break
         iteration += 1
+    print(table)
+    table.clear()
+    table.field_names = ['X', 'Y', 'Z']
+    table.add_row(x)
+    print("\nThe solutions are:")
     print(table)
 
 def calcMatrix(A,x,b):
