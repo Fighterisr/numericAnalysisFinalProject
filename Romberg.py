@@ -1,5 +1,5 @@
 import numpy as np
-from sympy import sin, cos, pi
+
 
 
 
@@ -29,12 +29,3 @@ def romberg(func, a, b, p):
     print("\n")
     return T
 
-
-
-def func(x):
-    return cos((2*np.e**(-2*x)))/((x**2)+5*x+6)
-
-rows = 5
-T = romberg(func, -0.4 , 0.4, rows)
-solution = T[rows-1, rows-1]
-print("The last answer:%.6f"%(solution))

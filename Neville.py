@@ -11,11 +11,6 @@ def NevilleInterpolation(x, x_list, y_list,m,n):
     return result
 
 
-x_list = [0.35,0.4, 0.55, 0.65, 0.7, 0.85,0.9]
-y_list = [-213.5991,-204.4416, -194.9375, -185.0256, -163.8656,-152.6271]
-print("n | m |      x")
-print("---------------------")
-print('\nFinal :',"%.6f"%(NevilleInterpolation(0.75,x_list,y_list,0,5)))
 
 
 

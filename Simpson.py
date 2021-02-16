@@ -1,5 +1,7 @@
 import numpy as np
 
+
+
 def simpsonrule(func,start,end,intervals):
     length = (end - start) / intervals
     x = start
@@ -14,7 +16,3 @@ def simpsonrule(func,start,end,intervals):
     result = (1/3)*length * result
     return result
 
-def f(x):
-    return ((x ** 2) * (np.e) ** (-x ** 2 + 5 * x - 3)) * (3 * x - 5)
-
-print("The last answer is:  %.6f"%simpsonrule(f,0.5,1, 4))
