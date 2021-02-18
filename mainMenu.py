@@ -91,17 +91,17 @@ def question32():
      print("\nLagrange:\n")
 
      x_list = [0.35, 0.4, 0.55, 0.65, 0.7, 0.85, 0.9]
-     y_list = [-213.5991, -204.4416, -194.9375, -185.0256, -163.8656, -152.6271]
+     y_list = [-213.5991, -204.4416, -194.9375, -185.0256, -174.6711,-163.8656, -152.6271]
 
      print("\nFinal: %.6f" % (LagrangeInter(0.75, x_list, y_list)))
 
      print("\nNeville:\n")
 
      x_list = [0.35, 0.4, 0.55, 0.65, 0.7, 0.85, 0.9]
-     y_list = [-213.5991, -204.4416, -194.9375, -185.0256, -163.8656, -152.6271]
+     y_list = [-213.5991, -204.4416, -194.9375, -185.0256, -174.6711,-163.8656, -152.6271]
      print("n | m |      x")
      print("---------------------")
-     print('\nFinal :', "%.6f" % (NevilleInterpolation(0.75, x_list, y_list, 0, 5)))
+     print('\nFinal :', "%.6f" % (NevilleInterpolation(0.75, x_list, y_list, 0, 6)))
 
 
 menu = 'Please select an option to display a question:\n'
