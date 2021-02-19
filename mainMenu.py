@@ -7,6 +7,7 @@ from Simpson import simpsonrule
 from Romberg import romberg
 from Lagrange import LagrangeInter
 from Neville import NevilleInterpolation
+from cubicSpline import naturalCubicSpline
 
 def question7():
      polynomial = lambda x: (sp.cos(2 * math.e ** (-2 * x))) / (x ** 2 + 5 * x + 6)
@@ -103,6 +104,11 @@ def question32():
      print("---------------------")
      print('\nFinal :', "%.6f" % (NevilleInterpolation(0.75, x_list, y_list, 0, 6)))
 
+def question39():
+     x = [0.1, 0.2, 0.3]
+     y = [-0.29004996, -0.56079734, -0.81401972]
+     value = 0.25
+     naturalCubicSpline(x, y, value)
 
 menu = 'Please select an option to display a question:\n'
 menu += '1. Question 7\n2. Question 16\n3. Question 22\n4. Question 27\n5. Question 32\n6. Question 39\nChoice: '
@@ -112,5 +118,5 @@ elif selection == '2': question16()
 elif selection == '3': question22()
 elif selection == '4': question27()
 elif selection == '5': question32()
-elif selection == '6': pass
+elif selection == '6': question39()
 else: print('Invalid input')
