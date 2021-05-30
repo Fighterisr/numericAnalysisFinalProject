@@ -3,11 +3,11 @@
 **Group members:**
 Name and ID:
 
-Omri Biton
-Lidor Zaguri
-Niv Tal
-Eli Manashirov
-Ruslan Borisevich
+* Omri Biton
+* Lidor Zaguri
+* Niv Tal
+* Eli Manashirov
+* Ruslan Borisevich
 
 **Instructions:**
 Run mainMenu.py and then choose a question by entering its menu number and press enter.
