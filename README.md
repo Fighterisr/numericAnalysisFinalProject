@@ -1,7 +1,6 @@
 # numericAnalysisFinalProject
 
 **Group members:**
-Name and ID:
 
 * Omri Biton
 * Lidor Zaguri
